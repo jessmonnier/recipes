@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NAME</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+
+<body>
+
+<div class="recipe-container">
+
+<h1>NAME</h1>
+
+<img class="recipe-image" src="../images/NAME.png">
+
+<h2>Nutrition</h2>
+
+<table>
+<tr>
+<th>Calories</th>
+<th>Protein</th>
+<th>Carbs</th>
+<th>Fat</th>
+<th>Fiber</th>
+<th>Servings</th>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<h2>Ingredients</h2>
+
+<ul class="ingredients">
+
+<li><label><input type="checkbox"> </label></li>
+<li><label><input type="checkbox"> </label></li>
+<li><label><input type="checkbox"> </label></li>
+<li><label><input type="checkbox"> </label></li>
+
+</ul>
+
+<h2>Instructions</h2>
+
+<div class="instructions">
+
+<p>
+
+</p>
+
+<p>
+
+</p>
+
+<p>
+
+</p>
+
+<p>
+
+</p>
+
+</div>
+
+<div>
+
+<h2>Source<h2>
+
+<p>
+
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
