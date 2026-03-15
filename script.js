@@ -83,8 +83,9 @@ function saveList() {
     localStorage.setItem('shoppingList', JSON.stringify(shoppingList));
 }
 
-// Optional: input/add button functionality (if page has input)
+// input/add button functionality
 if(addBtn && input){
+    // Add item with button
     addBtn.addEventListener('click', () => {
         const item = input.value.trim();
         if(item){
@@ -92,6 +93,13 @@ if(addBtn && input){
             saveList();
             renderList();
             input.value = '';
+        }
+    });
+
+    // Add item with Enter key
+    input.addEventListener('keydown', (e) => {
+        if(e.key === 'Enter'){
+            addBtn.click();
         }
     });
 }

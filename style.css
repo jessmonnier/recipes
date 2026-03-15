@@ -175,3 +175,41 @@ td, th {
 #shoppingList li button:hover {
     color: #ff3b3b;
 }
+
+/* Shopping list input and add button */
+.shopping-input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.shopping-input-container input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    background-color: #242728;
+    color: #e8e8e8;
+    font-size: 1rem;
+}
+
+.shopping-input-container input::placeholder {
+    color: #777;
+}
+
+.shopping-input-container button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    background-color: #242728;
+    color: #9ff3d1;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.shopping-input-container button:hover {
+    transform: scale(1.02);
+    background-color: #2d3032;
+}
