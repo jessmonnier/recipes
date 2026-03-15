@@ -183,6 +183,7 @@ td, th {
     justify-content: center;
     margin: 20px 0;
     max-width: 800px;
+    align-self: center;
 }
 
 .shopping-input-container input {
