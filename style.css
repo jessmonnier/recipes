@@ -34,7 +34,7 @@ h1 {
 
 #list-link {
     align-self: center;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 
 /* Recipe Card Grid */
@@ -181,9 +181,8 @@ td, th {
     display: flex;
     gap: 10px;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px auto;
     max-width: 800px;
-    align-self: center;
 }
 
 .shopping-input-container input {
