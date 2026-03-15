@@ -131,7 +131,7 @@ td, th {
 }
 
 /* Add to Shopping List button */
-.add-to-shopping {
+.add-to-shopping, .reset-btn {
     display: inline-block;
     padding: 10px 20px;
     margin: 15px 0;
@@ -144,7 +144,7 @@ td, th {
     transition: transform 0.2s, background-color 0.2s;
 }
 
-.add-to-shopping:hover {
+.add-to-shopping:hover, .reset-btn:hover {
     transform: scale(1.02);         /* same subtle hover as recipe-card */
     background-color: #2d3032;      /* slightly lighter on hover */
 }
