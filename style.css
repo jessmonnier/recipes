@@ -164,16 +164,26 @@ td, th {
     font-size: 1rem;
 }
 
+/* Shopping list item buttons */
 #shoppingList li button {
     background: none;
     border: none;
-    color: #ff6b6b;
-    font-size: 1.2rem;
+    color: #9ff3d1;
+    font-size: 1.1rem;
+    margin-left: 5px;
     cursor: pointer;
+    transition: color 0.2s;
+}
+
+@media (max-width: 600px) {
+    #shoppingList li button {
+        font-size: 1.3rem;
+        margin-left: 8px;
+    }
 }
 
 #shoppingList li button:hover {
-    color: #ff3b3b;
+    color: #6ee6b4;
 }
 
 /* Shopping list input and add button */

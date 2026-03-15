@@ -52,7 +52,6 @@ function renderList() {
     shoppingList.forEach((item, index) => {
         const li = document.createElement('li');
         li.className = 'recipe-card';
-        li.draggable = true;
 
         const textInput = document.createElement('input');
         textInput.value = item;
@@ -61,19 +60,43 @@ function renderList() {
             saveList();
         });
 
+        // Create up button
+        const upBtn = document.createElement('button');
+        upBtn.textContent = '⬆';
+        upBtn.title = 'Move up';
+        upBtn.onclick = () => {
+            if(index === 0) return; // already at top
+            [shoppingList[index-1], shoppingList[index]] = [shoppingList[index], shoppingList[index-1]];
+            saveList();
+            renderList();
+        };
+
+        // Create down button
+        const downBtn = document.createElement('button');
+        downBtn.textContent = '⬇';
+        downBtn.title = 'Move down';
+        downBtn.onclick = () => {
+            if(index === shoppingList.length - 1) return; // already at bottom
+            [shoppingList[index], shoppingList[index+1]] = [shoppingList[index+1], shoppingList[index]];
+            saveList();
+            renderList();
+        };
+
+        // Create delete button
         const delBtn = document.createElement('button');
         delBtn.textContent = '❌';
+        delBtn.title = 'Delete';
         delBtn.onclick = () => {
             shoppingList.splice(index, 1);
             saveList();
             renderList();
         };
 
+        // Append elements: input, up, down, delete
         li.appendChild(textInput);
+        li.appendChild(upBtn);
+        li.appendChild(downBtn);
         li.appendChild(delBtn);
-
-        li.addEventListener('dragstart', () => li.classList.add('dragging'));
-        li.addEventListener('dragend', () => li.classList.remove('dragging'));
 
         list.appendChild(li);
     });
