@@ -130,3 +130,24 @@ td, th {
 .instructions {
     line-height: 1.6;
 }
+
+/* Shopping list input items */
+#shoppingList li input {
+    width: 70%;
+    background: transparent;
+    border: none;
+    color: #e8e8e8;
+    font-size: 1rem;
+}
+
+#shoppingList li button {
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#shoppingList li button:hover {
+    color: #ff3b3b;
+}
