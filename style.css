@@ -32,6 +32,10 @@ h1 {
     margin: 0;
 }
 
+#list-link {
+    align-self: center;
+}
+
 /* Recipe Card Grid */
 
 .recipe-grid {
