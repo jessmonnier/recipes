@@ -60,29 +60,37 @@ function renderList() {
             saveList();
         });
 
-        // Create up button
+        // Up button
         const upBtn = document.createElement('button');
         upBtn.textContent = '⬆';
         upBtn.title = 'Move up';
         upBtn.onclick = () => {
-            if(index === 0) return; // already at top
+            if(index === 0) return;
             [shoppingList[index-1], shoppingList[index]] = [shoppingList[index], shoppingList[index-1]];
             saveList();
             renderList();
         };
 
-        // Create down button
+        // Down button
         const downBtn = document.createElement('button');
         downBtn.textContent = '⬇';
         downBtn.title = 'Move down';
         downBtn.onclick = () => {
-            if(index === shoppingList.length - 1) return; // already at bottom
+            if(index === shoppingList.length-1) return;
             [shoppingList[index], shoppingList[index+1]] = [shoppingList[index+1], shoppingList[index]];
             saveList();
             renderList();
         };
 
-        // Create delete button
+        // Complete toggle button
+        const toggleBtn = document.createElement('button');
+        toggleBtn.textContent = '✔';
+        toggleBtn.title = 'Mark complete / incomplete';
+        toggleBtn.onclick = () => {
+            li.classList.toggle('completed');
+        };
+
+        // Delete button
         const delBtn = document.createElement('button');
         delBtn.textContent = '❌';
         delBtn.title = 'Delete';
@@ -92,10 +100,11 @@ function renderList() {
             renderList();
         };
 
-        // Append elements: input, up, down, delete
+        // Append elements: input, up, down, toggle, delete
         li.appendChild(textInput);
         li.appendChild(upBtn);
         li.appendChild(downBtn);
+        li.appendChild(toggleBtn);
         li.appendChild(delBtn);
 
         list.appendChild(li);

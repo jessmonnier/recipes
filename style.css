@@ -182,6 +182,12 @@ td, th {
     }
 }
 
+/* Completed shopping list item */
+#shoppingList li.completed input {
+    text-decoration: line-through;
+    color: #777;
+}
+
 #shoppingList li button:hover {
     color: #6ee6b4;
 }
