@@ -129,6 +129,25 @@ td, th {
     color: #777;
 }
 
+/* Add to Shopping List button */
+.add-to-shopping {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    background-color: #242728;      /* same as recipe-card background */
+    color: #9ff3d1;                 /* matches links and headings */
+    border: 1px solid #333;         /* matches recipe-card border */
+    border-radius: 10px;            /* match card corners */
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.add-to-shopping:hover {
+    transform: scale(1.02);         /* same subtle hover as recipe-card */
+    background-color: #2d3032;      /* slightly lighter on hover */
+}
+
 /* Instructions */
 
 .instructions {
