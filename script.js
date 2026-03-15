@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
             localStorage.setItem('shoppingList', JSON.stringify(shoppingList));
 
-            window.location.href = '/shopping.html';
+            window.location.href = '../shopping.html';
         });
     });
 
