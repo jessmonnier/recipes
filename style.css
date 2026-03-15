@@ -88,7 +88,7 @@ h1 {
 
 /* Recipe Page Layout */
 
-.recipe-container {
+.recipe-container, .shopping-container {
     max-width: 800px;
     margin: auto;
     padding: 30px;
